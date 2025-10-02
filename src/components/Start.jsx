@@ -1,6 +1,8 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useNavigate } from 'react-router-dom';
 
 const Start = () => {
+  const navigate = useNavigate();
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
       {/* Mobile */}
@@ -9,7 +11,7 @@ const Start = () => {
         style={{
           width: '314px',
           height: '199px',
-          backgroundColor: 'rgba(77, 74, 71, 0.9)'
+          backgroundColor: 'rgba(0, 0, 0, 0.7)'
         }}
       >
         <div className="w-100 d-flex justify-content-center pt-3 fs-1">
@@ -17,6 +19,7 @@ const Start = () => {
         </div>
         {/* Buttons */}
         <div className="mt-auto mb-5 d-flex gap-5">
+          {/* Upload button */}
           <button
             className="btn d-flex align-items-center gap-2"
             style={{
@@ -33,6 +36,7 @@ const Start = () => {
             Upload
             <i className="bi bi-upload"></i>
           </button>
+          {/* Recorder button */}
           <button
             className="btn d-flex align-items-center gap-2"
             style={{
@@ -45,6 +49,7 @@ const Start = () => {
               padding: '15px 20px',
               border: 'none'
             }}
+            onClick={() => navigate('/recorder')}
           >
             Record
             <i className="bi bi-play-circle"></i>
@@ -54,11 +59,11 @@ const Start = () => {
 
       {/* Desktop/Tablet */}
       <div
-        className="rounded-3 d-flex flex-column align-items-center d-none d-md-flex"
+        className="rounded-4 d-flex flex-column align-items-center d-none d-md-flex"
         style={{
           width: '571px',
           height: '437px',
-          backgroundColor: 'rgba(77, 74, 71, 0.9)',
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
           paddingTop: '7rem',
           paddingBottom: '6rem'
         }}
@@ -70,6 +75,7 @@ const Start = () => {
 
         {/* Buttons */}
         <div className="mt-auto mb-5 d-flex" style={{ gap: '10rem' }}>
+          {/* Upload button */}
           <button
             className="btn d-flex align-items-center gap-2"
             style={{
@@ -86,7 +92,7 @@ const Start = () => {
             Upload
             <i className="bi bi-upload"></i>
           </button>
-
+          {/* Recorder button */}
           <button
             className="btn d-flex align-items-center gap-2"
             style={{
@@ -99,6 +105,7 @@ const Start = () => {
               padding: '15px 25px',
               border: 'none'
             }}
+            onClick={() => navigate('/recorder')}
           >
             Record
             <i className="bi bi-play-circle"></i>

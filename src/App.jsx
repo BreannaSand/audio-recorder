@@ -2,11 +2,18 @@ import './App.css';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Start from './components/start';
+import Recorder from './components/Recorder';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
       <Navbar />
-      <Start />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Start />} />
+          <Route path="/Recorder" element={<Recorder />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </>
   );

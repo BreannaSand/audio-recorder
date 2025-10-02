@@ -1,13 +1,15 @@
-import './App.css'
+import './App.css';
+import Footer from './components/footer';
+import Navbar from './components/navbar';
 import Start from './components/start'
-
 function App() {
-  return (
-    <div>
-        <Start />
-    </div>
-  )
-
+    return (
+        <>
+            <Navbar />
+             <Start />
+            <Footer />
+        </>
+    );
 }
 
-export default App
+export default App;

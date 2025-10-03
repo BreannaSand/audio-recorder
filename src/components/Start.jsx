@@ -66,7 +66,7 @@ const Start = () => {
         style={{
           width: '571px',
           height: '437px',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
           paddingTop: '7rem',
           paddingBottom: '6rem'
         }}

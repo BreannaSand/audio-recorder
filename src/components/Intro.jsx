@@ -53,7 +53,7 @@ const Intro = () => {
         style={{
           width: '571px',
           height: '437px',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
           paddingBottom: '40px'
         }}
       >

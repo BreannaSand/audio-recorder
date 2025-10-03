@@ -11,7 +11,7 @@ const Intro = () => {
         style={{
           width: '314px',
           height: '264px',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)'
+          backgroundColor: 'rgba(0, 0, 0, 0.5)'
         }}
       >
         {/* Return button */}

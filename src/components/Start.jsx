@@ -11,7 +11,7 @@ const Start = () => {
         style={{
           width: '314px',
           height: '199px',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)'
+          backgroundColor: 'rgba(0, 0, 0, 0.5)'
         }}
       >
         {/* Title */}

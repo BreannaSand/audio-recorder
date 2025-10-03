@@ -1,14 +1,22 @@
-import './App.css'
-import Recorder from "./components/Recorder"
-
+import './App.css';
+import Footer from './components/footer';
+import Navbar from './components/navbar';
+import Start from './components/start';
+import Recorder from './components/Recorder';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
-
   return (
-    <div>
-      <h1>Recording Studio</h1>
-      <Recorder />
-    </div>
-  )
+    <>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Start />} />
+          <Route path="/Recorder" element={<Recorder />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;

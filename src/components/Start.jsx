@@ -14,8 +14,11 @@ const Start = () => {
           backgroundColor: 'rgba(0, 0, 0, 0.7)'
         }}
       >
-        <div className="w-100 d-flex justify-content-center pt-3 fs-1">
-          <p className="text-white m-0">Recording studio</p>
+        {/* Title */}
+        <div className="pt-3">
+          <h1 className="text-white m-0" style={{ fontFamily: "'Fira sans', sans-serif" }}>
+            Recording studio
+          </h1>
         </div>
         {/* Buttons */}
         <div className="mt-auto mb-5 d-flex gap-5">
@@ -49,7 +52,7 @@ const Start = () => {
               padding: '15px 20px',
               border: 'none'
             }}
-            onClick={() => navigate('/recorder')}
+            onClick={() => navigate('/Intro')}
           >
             Record
             <i className="bi bi-play-circle"></i>
@@ -105,7 +108,7 @@ const Start = () => {
               padding: '15px 25px',
               border: 'none'
             }}
-            onClick={() => navigate('/recorder')}
+            onClick={() => navigate('/Intro')}
           >
             Record
             <i className="bi bi-play-circle"></i>

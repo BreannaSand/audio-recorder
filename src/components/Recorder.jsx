@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 export default function Recorder() {
     const recorderRef = useRef(null);
@@ -30,6 +30,10 @@ export default function Recorder() {
         recorderRef.current.stop();
         console.log("Recording stopped...")
     };
+
+    useEffect(() => {
+        startRecording()
+    }, []);
 
     return (
         <div>
